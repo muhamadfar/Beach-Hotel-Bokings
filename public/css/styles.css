@@ -1,0 +1,133 @@
+/* public/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url('../images/laut.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 102, 204, 0.8);
+    /* padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 60px;
+}
+
+#home {
+    background-color: rgba(102, 192, 244, 0.8);
+    color: white;
+    margin-top: 0;
+}
+
+#rooms, #booking {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.room {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.room:hover {
+    transform: translateY(-10px);
+}
+
+.room-img {
+    width: 100%;
+    height: auto;
+}
+
+.room-info {
+    padding: 15px;
+}
+
+#booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#booking-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#booking-form input,
+#booking-form select,
+#booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#booking-form button {
+    background-color: #0066cc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#booking-form button:hover {
+    background-color: #004080;
+}
+
+footer {
+    background-color: rgba(0, 102, 204, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
